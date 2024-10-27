@@ -1,6 +1,12 @@
 <script>
 	import { onMount } from "svelte";
+	import { Styles } from '@sveltestrap/sveltestrap';
+	/**
+	 * @type {HTMLElement}
+	 */
 	let el;
+
+	import Slider from "$lib/Slider.svelte";
 
 	onMount(async () => {
 	  const { createEditor } = await import("../lib/editor");
@@ -8,7 +14,12 @@
 	});
 </script>
 
-<div class="rete" bind:this={el} />
+<main>
+	<Styles />
+	<Slider />
+	<div class="rete" bind:this={el} />
+
+</main>
 
 
 <style>
