@@ -5,7 +5,7 @@ export type AreaExtra = SvelteArea2D<Schemes>;
 
 export class Node extends ClassicPreset.Node {
   width = 180;
-  height = 120;
+  height = 160;
 
   constructor(name: string) {
     super(name);

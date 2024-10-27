@@ -59,6 +59,7 @@ export async function createEditor(container: HTMLElement) {
   const c = createNode("C", socket);
 
   a.addControl("a", new ClassicPreset.InputControl("text", { initial: "a" }));
+  a.addControl("b", new ClassicPreset.InputControl("number", { initial: 0 }));
   b.addControl("b", new ClassicPreset.InputControl("text", { initial: "b" }));
   c.addControl("c", new ClassicPreset.InputControl("text", { initial: "c" }));
 
